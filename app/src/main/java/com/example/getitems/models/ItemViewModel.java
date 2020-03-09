@@ -27,9 +27,12 @@ public class ItemViewModel {
     private static final int COUNT = 25;
 
     static {
-        addItem(new ItemModel("Athletic Socks", "Simple athletic socks", 0, 0, 1,"item_athletic_socks"));
-        addItem(new ItemModel("Bunny Slippers", "Fluffy slippers that look like bunnies", 1, 0, 2,"item_bunny_slippers"));
-        addItem(new ItemModel("Comfy Sneakers", "Sneakers that are comfortable to walk and stand in", 2, 0, 2,"item_comfy_sneakers"));
+        addItem(new ItemModel("Athletic Socks", "Simple athletic socks",
+                0, 0, 1,"item_athletic_socks", ItemLocationEnum.Feet));
+        addItem(new ItemModel("Bunny Slippers", "Fluffy slippers that look like bunnies",
+                1, 0, 2,"item_bunny_slippers", ItemLocationEnum.Feet));
+        addItem(new ItemModel("Comfy Sneakers", "Sneakers that are comfortable to walk and stand in",
+                2, 0, 2,"item_comfy_sneakers", ItemLocationEnum.Feet));
     }
 
     private static void addItem(ItemModel item) {
@@ -58,15 +61,18 @@ public class ItemViewModel {
         public final int Damage;
         public final int Value;
         public final String ImageURI;
+        public final ItemLocationEnum Location;
 
 
-        public ItemModel(String name, String description, int range, int damage, int value, String uri) {
+        public ItemModel(String name, String description, int range, int damage, int value,
+                         String uri, ItemLocationEnum location) {
             this.Name = name;
             this.Description = description;
             this.Range = range;
             this.Damage = damage;
             this.Value = value;
             this.ImageURI = uri;
+            this.Location = location;
         }
 
         @Override
