@@ -37,10 +37,6 @@ public class ItemViewModel {
         ITEM_MAP.put(item.id, item);
     }
 
-//    private static ItemModel createDummyItem(int position) {
-//        return new ItemModel(String.valueOf(position), "Item " + position, makeDetails(position));
-//    }
-
     private static String makeDetails(int position) {
         StringBuilder builder = new StringBuilder();
         builder.append("Details about Item: ").append(position);
