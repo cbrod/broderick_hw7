@@ -27,10 +27,9 @@ public class ItemViewModel {
     private static final int COUNT = 25;
 
     static {
-        // Add some sample items.
-//        for (int i = 1; i <= COUNT; i++) {
-//            addItem(createDummyItem(i));
-//        }
+        addItem(new ItemModel("Athletic Socks", "Simple athletic socks", 0, 0, 1,""));
+        addItem(new ItemModel("Bunny Slippers", "Fluffy slippers that look like bunnies", 1, 0, 2,""));
+        addItem(new ItemModel("Comfy Sneakers", "Sneakers that are comfortable to walk and stand in", 2, 0, 2,""));
     }
 
     private static void addItem(ItemModel item) {
