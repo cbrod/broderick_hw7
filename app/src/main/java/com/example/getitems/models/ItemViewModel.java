@@ -27,9 +27,9 @@ public class ItemViewModel {
     private static final int COUNT = 25;
 
     static {
-        addItem(new ItemModel("Athletic Socks", "Simple athletic socks", 0, 0, 1,""));
-        addItem(new ItemModel("Bunny Slippers", "Fluffy slippers that look like bunnies", 1, 0, 2,""));
-        addItem(new ItemModel("Comfy Sneakers", "Sneakers that are comfortable to walk and stand in", 2, 0, 2,""));
+        addItem(new ItemModel("Athletic Socks", "Simple athletic socks", 0, 0, 1,"item_athletic_socks.png"));
+        addItem(new ItemModel("Bunny Slippers", "Fluffy slippers that look like bunnies", 1, 0, 2,"item_bunny_slippers.png"));
+        addItem(new ItemModel("Comfy Sneakers", "Sneakers that are comfortable to walk and stand in", 2, 0, 2,"item_comfy_sneakers.png"));
     }
 
     private static void addItem(ItemModel item) {
