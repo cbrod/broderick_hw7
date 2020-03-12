@@ -15,12 +15,12 @@ import java.util.UUID;
 public class ItemViewModel {
 
     /**
-     * An array of sample (dummy) items.
+     * An array of sample items.
      */
     public static final List<ItemModel> ITEMS = new ArrayList<ItemModel>();
 
     /**
-     * A map of sample (dummy) items, by ID.
+     * A map of sample items, by ID.
      */
     public static final Map<String, ItemModel> ITEM_MAP = new HashMap<String, ItemModel>();
 
@@ -43,17 +43,17 @@ public class ItemViewModel {
         ITEM_MAP.put(item.id, item);
     }
 
-    private static String makeDetails(int position) {
-        StringBuilder builder = new StringBuilder();
-        builder.append("Details about Item: ").append(position);
-        for (int i = 0; i < position; i++) {
-            builder.append("\nMore details information here.");
-        }
-        return builder.toString();
-    }
+//    private static String makeDetails(int position) {
+//        StringBuilder builder = new StringBuilder();
+//        builder.append("Details about Item: ").append(position);
+//        for (int i = 0; i < position; i++) {
+//            builder.append("\nMore details information here.");
+//        }
+//        return builder.toString();
+//    }
 
     /**
-     * A dummy item representing a piece of content.
+     * item representing a piece of content.
      */
     public static class ItemModel {
         public final String id = UUID.randomUUID().toString();
