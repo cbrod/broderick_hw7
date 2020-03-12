@@ -1,5 +1,8 @@
 package com.example.getitems.models;
 
+import com.example.getitems.GlobalModel;
+import com.example.getitems.R;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -29,19 +32,19 @@ public enum AttributeEnum {
     public String toString() {
         switch(this){
             case Unknown:
-                return "Unknown";
+                return GlobalModel.MainActivityContext.getString(R.string.Unknown);
             case Speed:
-                return "Speed";
+                return GlobalModel.MainActivityContext.getString(R.string.Speed);
             case Defense:
-                return "Defense";
+                return GlobalModel.MainActivityContext.getString(R.string.Defense);
             case Attack:
-                return "Attack";
+                return GlobalModel.MainActivityContext.getString(R.string.Attack);
             case CurrentHealth:
-                return "Current Health";
+                return GlobalModel.MainActivityContext.getString(R.string.CurrentHealth);
             case MaxHealth:
-                return "Max Health";
+                return GlobalModel.MainActivityContext.getString(R.string.MaxHealth);
         }
-        return "Unknown";
+        return GlobalModel.MainActivityContext.getString(R.string.Unknown);
     }
 
     private int intValue;
